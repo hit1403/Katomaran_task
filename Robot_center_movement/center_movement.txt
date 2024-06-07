@@ -1,0 +1,43 @@
+Autonomous Navigation Robot with Pillar Avoidance
+
+
+Introduction
+
+This Python script implements an autonomous navigation algorithm for a robot using the Pygame library. The robot is tasked with navigating from its starting position to the center of a rectangular pillar while avoiding collisions with the pillar.
+
+Dependencies
+
+Python 3.10
+Pygame
+
+Features
+
+1)Automatic calculation of the center of the rectangular pillar.
+2)Navigation algorithm to guide the robot to the center of the pillar while avoiding collisions.
+3)Visualization of the robot's movement and the pillar on the Pygame window.
+Usage
+4)Install Python and Pygame if not already installed.
+5)Run the Python script using the command python autonomous_navigation_robot.py.
+6)The Pygame window will display the robot's movement towards the center of the pillar while avoiding collisions.
+
+Code Structure
+
+Initialization: Pygame is initialized, and screen dimensions are set.
+Pillar Coordinates: Coordinates of the rectangular pillar are defined.
+Center Calculation: Function to calculate the center of the pillar.
+Robot Position: Starting position of the robot.
+Navigation Algorithm: Function to navigate the robot to the center of the pillar while avoiding collisions.
+Draw Functions: Functions to draw the pillar and the robot on the Pygame window.
+Path Generation: Path calculated by the navigation algorithm.
+Main Loop: Pygame main loop to continuously update the display.
+
+
+
+Pillar Avoidance Algorithm
+
+The navigation algorithm ensures that the robot avoids collisions with the pillar while moving towards the center. It navigates the robot horizontally and vertically, adjusting its path when encountering the pillar. Special cases are handled when the robot needs to navigate around the pillar without touching it.
+
+Conclusion
+
+This script demonstrates a simple yet effective algorithm for autonomous navigation in the presence of obstacles. It can serve as a foundation for more complex navigation systems in robotics applications.
+
