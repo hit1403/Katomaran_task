@@ -19,7 +19,7 @@ clock = pygame.time.Clock()
 
 # Coordinates of the rectangular pillar (x1, y1), (x2, y2), (x3, y3), (x4, y4)
 pillar_corners = [(300, 200), (500, 200), (500, 400), (300, 400)]
-#pillar_corners = [(300, 300), (200, 400), (300, 500), (400, 400)]
+pillar_corners = [(300, 300), (200, 400), (300, 500), (400, 400)]
 
 def calculate_center(corners):
     x_coords = [corner[0] for corner in corners]
@@ -185,7 +185,7 @@ while running:
         robot_pos[0], robot_pos[1] = next_pos
     
     pygame.display.flip()
-    clock.tick(10)
+    clock.tick(20)
 
 pygame.quit()
 sys.exit()

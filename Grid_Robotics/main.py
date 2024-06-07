@@ -34,6 +34,7 @@ def create_grid():
         if (x, y) not in obstacles:
             obstacles.add((x, y))
             grid[x][y] = 1  # 1 represents an obstacle
+    print("errvrv",obstacles)
     return grid, obstacles
 
 def draw_grid(window, grid, path=None, start=None, end=None):
@@ -44,7 +45,7 @@ def draw_grid(window, grid, path=None, start=None, end=None):
                 pygame.draw.rect(window, BLACK, rect)
             else:
                 pygame.draw.rect(window, WHITE, rect)
-            pygame.draw.rect(window, BLACK, rect, 1)
+            pygame.draw.rect(window, BLACK, rect,1)
             
             # Drawing coordinates
             text = font.render(f'({row},{col})', True, BLACK)
@@ -116,6 +117,7 @@ def a_star(grid, start, end):
                     g_score[neighbor] = tentative_g_score
                     f_score[neighbor] = tentative_g_score + heuristic(neighbor, end)
                     heapq.heappush(open_set, (f_score[neighbor], neighbor))
+                    print(open_set)
     return []
 
 def main():
